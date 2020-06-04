@@ -1,0 +1,49 @@
+use biblioteca;
+
+CREATE TABLE bibliotecario (
+telefone varchar(255),
+dataNascimento date,
+cpf varchar(255) unique,
+email varchar(255) unique,
+nome varchar(255),
+rg varchar(255) unique,
+complemento varchar(255),
+bairro varchar(255),
+cidade varchar(255),
+uf varchar(255),
+cep varchar(255),
+num varchar(255),
+logradouro varchar(255),
+codFuncionario int PRIMARY KEY AUTO_INCREMENT);
+
+CREATE TABLE cliente (
+turma varchar(255),
+dataNascimento date,
+email varchar(255),
+nome varchar(255),
+telefone varchar(255),
+telcel varchar(255),
+ra int PRIMARY KEY AUTO_INCREMENT
+);
+
+CREATE TABLE emprestimo_devolucao (
+data_devolucao date,
+data_emprestimo date,
+codEmprestimo int PRIMARY KEY AUTO_INCREMENT,
+codlivro int,
+ra int,
+codFuncionario int,
+FOREIGN KEY(ra) REFERENCES cliente (ra),
+FOREIGN KEY(codFuncionario) REFERENCES bibliotecario (codFuncionario)
+    );
+
+CREATE TABLE livro (
+titulo varchar(255),
+genero varchar(255),
+autor varchar(255),
+editora varchar(255),
+codlivro int PRIMARY KEY AUTO_INCREMENT
+);
+
+ALTER TABLE emprestimo_devolucao ADD FOREIGN KEY(codlivro) REFERENCES livro (codlivro);
+

@@ -1,0 +1,72 @@
+insert into bibliotecario values
+('11999999999', '2001-02-15', '09139186481', 'filufilu@bol.com', 'Geraldo Gonçalves', '020184174', 'sem complemento', 'Centrão', 'Santo André', 'Distrito Federal', '91274978', '98', 'Rua dos Impostos', 1)
+
+('939173738', '2000-01-02', '190829174981, 'fluflydog@hotmail.com', 'Thiago Ferreira', '928394781', 'apto 21', 'Bairro das Moedas', 'Ribeirãozinho', 'São Paulo', '018497427', '950', 'Rua do Dinheiro', 2)
+
+('91846246', '1998-11-15', '9108249864', 'sososo@sososo.com', 'Sofia Aquino', '9232469', 'sem complemento', 'Centro Alto', 'Ribeirão Pires', 'São Paulo', '013974892734', '49', 'Angelo Pavani', 3)
+
+insert into livro VALUES
+
+('Iracema', 'Romance indianista', 'José de Alencar', 'Panda Books', 1)
+
+('Vidas Secas', 'Romance', 'Graciliano Ramos', 'Record', 2)
+
+('O Extraordinário', 'Drama', 'R.J. Palacio', 'Intríseca', 3)
+
+('Breves respostas para grandes questões', 'Física', 'Stephen Hawking', 'Intríseca', 4)
+
+('Uma breve história do tempo', 'Física', 'Stephen Hawking', 'Intríseca', 5)
+
+('A garota que roubava livros', 'Drama', 'Markus Zusak', 'Intríseca', 6)
+
+('O mundo pelos olhos de Bob', 'Autoajuda', 'James Bowen', 'Novo Conceito', 7)
+
+('Um gato de rua chamado Bob', 'Autoajuda', 'James Bowen', 'Novo Conceito', 8)
+
+('Vivendo uma vida autêntica', 'Autobiografia', 'AuthenticGames', 'Astral cultural', 9)
+
+('Herobrine a lenda', 'Ficção', 'TazerCraft', 'Geração Jovem', 10)
+
+insert into cliente VALUES
+
+('2ºC', '2004-11-15', 'sofia.aquino@etec.sp.gov.br', 'Sofia da Silva Aquino', '1148244339', '11987179648', 19327)
+
+('1ºC', '2005-11-15', 'arrudaleite@leite.com', 'Quezia Andrade', '19288641824', '192498642', 20202)
+
+('3ºC', '2003-11-20', 'seila.isso@hotmail.com', 'Gabriela Matos', '820175629', '29472947', 18921)
+
+('3ºC', '2003-10-21', 'mdbd@bol.com', 'Cláudio Ramos', '01283984', '197238147', 18321)
+
+('1ºB', '2005-09-02', 'luba@hotmail.com', 'Lucas Feuerschütte', '10127958', '192474918', 20000)
+
+('2ºB', '2004-02-15', 'berere@hotmail.com', 'Tiago Lopes', '198497', '91824987', 19214)
+
+('2ºB', '2004-06-04', 'arroba@arroba.arroba', 'Gilberto Gil', '10823914', '1902489', 19123)
+
+('3ºB', '2003-04-06', 'yahoo@yahoo.com', 'Carlos Alberto', '01982398', '1982094', 18241)
+
+('1ºA', '2005-03-07', 'hooo@outlook.com', 'Geraldo', '10238109', '190831', 20154)
+
+('2ºC', '2004-08-09', 'ok@bol.com', 'Israel Subirá', '190283', '19831', 19451)
+
+INSERT into emprestimo_devolucao VALUES
+
+('2020-02-16', '2020-02-09', 1, 2, 19327, 2)
+
+('2019-02-18', '2019-04-20', 2, 4, 19214, 3)
+
+('2018-05-10', '2018-04-09', 3, 6, 18241, 3)
+
+('2004-04-10', '2005-08-02', 4, 10, 19123, 1)
+
+('2020-04-06', '2020-06-04', 5, 9, 20154, 1)
+
+('2015-05-10', '2016-04-10', 6, 5, 19451, 2)
+
+('2014-06-14', '2014-03-10', 7, 4, 20202, 3)
+
+('2019-10-20', '2019-11-20', 8, 3, 19327, 3)
+
+('2020-06-04', '2020-06-10', 9, 1, 18921, 2)
+
+('1999-04-19', '1999-06-20', 10, 3, 20000, 1)
