@@ -1,0 +1,35 @@
+SELECT nome, dataNascimento FROM `cliente` WHERE nome LIKE "c%"
+
+SELECT nome, telefone, dataNascimento FROM `cliente` WHERE month(dataNascimento)='11'
+
+SELECT nome, telefone, dataNascimento FROM `cliente` WHERE year(dataNascimento)='2005'
+
+SELECT * FROM `cliente` ORDER by turma desc
+
+SELECT titulo, autor, genero FROM `livro` WHERE genero = "Física"
+
+SELECT count(*) FROM livro
+
+SELECT titulo, autor, genero FROM `livro` WHERE autor = "TazerCraft"
+
+SELECT codEmprestimo, codlivro, data_emprestimo, data_devolucao FROM `emprestimo_devolucao` WHERE month(data_emprestimo)='04'
+
+SELECT data_emprestimo, data_devolucao, ra FROM `emprestimo_devolucao` WHERE data_emprestimo BETWEEN '2019-01-01' and '2020-12-31'
+
+SELECT nome, email, cidade FROM `bibliotecario` WHERE cidade = "Santo André"
+
+SELECT * FROM `bibliotecario` ORDER by nome
+
+SELECT * FROM `livro` ORDER by gênero
+
+SELECT * FROM `livro` WHERE editora = "Intríseca"
+
+SELECT titulo, autor, genero, paginas from livro where (autor="Stephen Hawking" or genero like "%Física%") AND paginas < 300
+
+SELECT * FROM `livro` WHERE titulo LIKE 'o%' AND genero LIKE 'drama'
+
+SELECT AVG(paginas) from livro
+
+SELECT SUM(paginas) from livro
+
+SELECT autor, titulo, genero, qntd from livro where qntd BETWEEN 4 and 6
