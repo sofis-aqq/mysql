@@ -1,5 +1,3 @@
-/*Inserts do banco de dados Jornal - Criado por Vinícius Goulart (2C)*/
-
 use jornal;
 
 Insert into turma(turma) Values ('1C'), ('2C'), ('3C'), ('1B'), ('2B'), ('3B'), ('1A'), ('2A'), ('3A'), ('1F'), ('2F'), ('3F'), ('1I'), ('2I'), ('3I');
